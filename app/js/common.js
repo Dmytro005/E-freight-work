@@ -1,46 +1,65 @@
-///Smoothly scroll for anchor
-
-if ($("body").width() >= 800) {
-    var options = {
-        offset: 200
-    }
-    $("a").mPageScroll2id();
-    
-}
-
 /// Connect carousel
+
+new WOW().init();
+
 var carousel = $('.carousel').flickity({
-    // options
     cellAlign: 'left',
     contain: true,
     pageDots: false,
     prevNextButtons: false
 });
 
+//------Only desktop settings --------/
 if ($("body").width() >= 800) {
-    
+
+    ///Smoothly scroll for anchor
+    var options = {
+        offset: 200
+    }
+    $("a").mPageScroll2id();
+
+    //Add animation to .menu>ul>li
+    setTimeout(function () {
+        $(".menu>ul>li").each(function (i) {
+            $(".menu>ul>li").eq(i).addClass("wow rotateInUpLeft");
+            $(".menu>ul>li").eq(i).attr("data-wow-delay", i * 0.2 + "s");
+        });
+    }, 50);
+}
+
+
+//------Only mobile settings --------/
+if ($("body").width() >= 800) {
     var carousel = $('.carousel').flickity({
-    prevNextButtons: true,
-});
+        prevNextButtons: true,
+    });
 }
 
-if( $("body").width() <= 800){
-
-    console.log("mob");
-}
-
-//Wow connection
-new WOW().init();
-
+//------Carousel in section Problems setting Start-------//
 
 //Carousel progressbar
+
 
 var carousel = new Flickity('.carousel');
 var progressBar = document.querySelector('.progress-bar');
 
 $('.button-previous').css("opacity", "0.5");
-$('.button-revious').css("opacity", "0.5");
 
+//Displays number of carousel slides
+$("#all").text(carousel.slides.length);
+$("#current").text(carousel.selectedIndex + 1 + " /");
+
+
+////Butttons Next Previous
+$('.button-previous').on('click', function () {
+    $(".carousel").flickity('previous');
+});
+$('.button-next').on('click', function () {
+    $('.carousel').flickity('next');
+});
+
+
+//Carouser Progressbar
 carousel.on('scroll', function (progress) {
     progress = Math.max(0, Math.min(1, progress));
     // console.log(progress);
@@ -52,8 +71,8 @@ carousel.on('scroll', function (progress) {
     } else {
         $('.button-previous').css("opacity", "1");
     }
-    //Next button unavailable
 
+    //Next button unavailable
     if ((carousel.selectedIndex + 1) == carousel.slides.length) {
         $('.button-next').css("opacity", "0.5");
     } else {
@@ -64,28 +83,11 @@ carousel.on('scroll', function (progress) {
 });
 
 
-//All carousel elements
-
-$("#all").text(carousel.slides.length);
-$("#current").text(carousel.selectedIndex + 1 + " /");
-// $('.button-previous').css("opacity","0.5");
-
-////Butttons
-$('.button-previous').on('click', function () {
-    $(".carousel").flickity('previous');
-});
-$('.button-next').on('click', function () {
-    $('.carousel').flickity('next');
-
-});
 
 
+//-------Vertical Carousel element START----///
 
-//Vertical scroll element
-
-var progressBar2 = document.getElementById("progressBar2");
-
-// console.log(carousel2);
+var progressBar2 = $("#progressBar2");
 
 $("#area").on("scroll", function () {
     var scroll2 = $(this).scrollTop();
@@ -104,12 +106,18 @@ $("#area").on("scroll", function () {
 ////Vertical scroll on click
 
 var previous = $("li[order='1']");
-previous.css("opacity", "1");
+previous.css({"opacity":"1",
+                  "text-decoration":"underline"
+                 });
 
 $("li[order]").on("click", function () {
-    previous.css("opacity", "0.5");
+    previous.css({"opacity":"0.5",
+                  "text-decoration":"none"
+                 });
     previous = $(this);
-    $(this).css("opacity", "1");
+    $(this).css({"opacity":"1",
+                  "text-decoration":"underline"
+                 });
 });
 
 $(".solutions").on("click", function () {
@@ -124,11 +132,6 @@ $(".solutions").on("click", function () {
     }, 500);
 });
 
-/*///Change data-wow-offset on mobile
-if ($("body").width() <= 800) {
-    $(".wow").attr("data-wow-offset", "200");
-}*/
-
 //Add scroll Top to #arrow
 $("#arrow").on("click", function () {
 
@@ -136,14 +139,6 @@ $("#arrow").on("click", function () {
         scrollTop: $("#about").offset().top - (($(window).height() - $("#about").outerHeight(true)) / 2)
     }, 1000);
 })
-
-//Add animation to .menu>ul>li
-setTimeout(function () {
-    $(".menu>ul>li").each(function (i) {
-        $(".menu>ul>li").eq(i).addClass("wow rotateInUpLeft");
-        $(".menu>ul>li").eq(i).attr("data-wow-delay", i * 0.2 + "s");
-    });
-}, 50);
 
 ///Drop Down Team
 $(".drop-down").click(function () {
@@ -528,32 +523,31 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: ExpeditionReinvented,
         map: map
-        });
-    
-        var contentString = 
-            '<div id="content"  style="text-align:center;" >' +
-                '<div id="siteNotice">' + '</div>' +
-                '<h1 id="firstHeading" class="firstHeading">Headquarter</h1>' +
-                '<div id="bodyContent">' +
-                    '<p>Lorem impsund dolor sit amet</p>'+
-                    '<a target="blank" href="https://goo.gl/maps/pkWxNiseZ7G2">Показати на мапі</a>' +
-                '</div>';
-                '' +
-            '</div>';
+    });
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
+    var contentString =
+        '<div id="content"  style="text-align:center;" >' +
+        '<div id="siteNotice">' + '</div>' +
+        '<h1 id="firstHeading" class="firstHeading">Headquarter</h1>' +
+        '<div id="bodyContent">' +        
+        '<a target="blank" href="https://goo.gl/maps/pkWxNiseZ7G2">Показати на мапі</a>' +
+        '</div>';
+    '' +
+    '</div>';
 
-        var marker = new google.maps.Marker({
-            position: ExpeditionReinvented,
-            map: map,
-            title: 'Expedition Reinvented Headquarter'
-        });
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
 
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
+    var marker = new google.maps.Marker({
+        position: ExpeditionReinvented,
+        map: map,
+        title: 'Expedition Reinvented Headquarter'
+    });
+
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
 
 }
 

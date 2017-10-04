@@ -39,6 +39,10 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
                 align-items: center;
                 justify-content: center;
             }
+            #logo{
+                margin: 0;
+                padding-left: 70px;
+            }
             .row {
                 margin-top: 0;
                 h2 {
@@ -87,6 +91,7 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
         padding-bottom: 0;
         .wr {
             .row1 {
+                padding-bottom: 1px;
                 h2 {
                     align-self: center;
                     padding-bottom: 20px;
@@ -101,12 +106,13 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
                     height: auto;
                     width: 100%;
                     #child {
-                        overflow: scroll;
+                        overflow: none;
                         height: auto;
                         .row {
                             padding: 0;
                             margin-bottom: 30px;
                             margin-top: 30px;
+                            height: inherit;
                             img {
                                 width: inherit;
                             }
