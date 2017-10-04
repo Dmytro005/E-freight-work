@@ -1,0 +1,142 @@
+///Mobile
+$degT: 8%;
+$degB: 92%;
+$poly-top: polygon(0% $degT, 100% 0%, 100% 100%, 0% 100%);
+$poly-bott: polygon(0% 0%, 100% 0%, 100% $degB, 0% 100%);
+$poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
+@media only screen and (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        .wr {
+            padding: 0px 20px;
+            .row {
+                flex-direction: column;
+            }
+        }
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    img {
+        max-width: 450px;
+    }
+    section#main {
+        clip-path: $poly-bott;
+        .wr {
+            .box {
+                align-items: center;
+                justify-content: center;
+            }
+            .row {
+                margin-top: 0;
+                h2 {
+                    text-align: center;
+                    align-self: center;
+                }
+                span {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    section#problems {
+        clip-path: $poly;
+        .wr {
+            padding: 8% 0px;
+            h2 {
+                align-self: center;
+                padding-bottom: 20px;
+                margin: 0;
+                margin-top: 20px;
+            }
+            .carousel {
+                .carousel-cell {
+                    .row {
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 20px;
+                        padding-bottom: 0;
+                        img {
+                            width: 90%;
+                        }
+                        h3 {
+                            text-align: center;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+            #buttons {
+                display: none;
+            }
+        }
+    }
+    section#solutions {
+        padding-bottom: 0;
+        .wr {
+            .row1 {
+                h2 {
+                    align-self: center;
+                    padding-bottom: 20px;
+                    margin: 0;
+                }
+            }
+            .row2 {
+                .track {
+                    display: none;
+                }
+                #area {
+                    height: auto;
+                    width: 100%;
+                    #child {
+                        overflow: scroll;
+                        height: auto;
+                        .row {
+                            padding: 0;
+                            margin-bottom: 30px;
+                            margin-top: 30px;
+                            img {
+                                width: inherit;
+                            }
+                            h3 {
+                                text-align: center;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#contacts {
+        clip-path: $poly-top;
+        #map {
+            height: 260px;
+        }
+        .wr {
+            .row {
+                ul {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    li {
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

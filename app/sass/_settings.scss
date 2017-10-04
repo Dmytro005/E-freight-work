@@ -1,0 +1,195 @@
+///Variables
+//Fonts
+$ComB: Ubuntu-Light;
+$ComR: SourceSansPro-Light;
+$Arch: SourceSansPro-Regular;
+//Colors
+$green:#52BE7F;
+$red: #C23934;
+$grey: #f8f8f8; //section grey
+$darker: #BFBFBF;
+///Box Shadow
+//$shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.3);
+//Widths
+$desctop: 1024px;
+$mobile: 700px;
+///Main Styles
+
+h2 {
+    font-family: $ComB;
+    color: $red;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 5px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+h3 {
+    @extend h2;
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: $ComR;
+    font-size: 16px;
+    color: $red;
+    margin: 0;
+    text-transform: none;
+}
+
+p {
+    font-family: $ComR;
+    font-size: 15px;
+    color: black;
+    margin: 5px 0;
+    //    line-height: 1.5;
+}
+
+a {
+    @extend p;
+    text-decoration: none;
+    //    color: white;
+}
+
+a:hover {
+    color: $green;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    li {
+        @extend h3;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    &:after {
+        content: none;
+        display: none;
+    }
+    &:before {
+        content: none;
+        display: none;
+    }
+}
+
+.drop-down {
+    transition: 1s;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    #line1 {
+        transition: 1s;
+        // border-radius: 2px;
+        width: 2px;
+        height: 10px;
+        background-color: black;
+        display: flex;
+        transform: translate(4px, 0px) rotate(45deg);
+    }
+    #line2 {
+        @extend #line1;
+        transform: translate(-4px, 0px) rotate(-45deg);
+    }
+    #line3 {
+        @extend #line1;
+        transform: translate(-3px, -5px) rotate(0);
+        height: 14px;
+    }
+}
+
+.close {
+    transition: 1s;
+    #line1 {
+        background-color: $darker;
+        transform: translate(4px, -10px) rotate(135deg);
+    }
+    #line2 {
+        @extend #line1;
+        transform: translate(-4px, -10px) rotate(-135deg);
+    }
+    #line3 {
+        @extend #line1;
+        transform: translate(-3px, -5px) rotate(0);
+    }
+}
+
+.btn {
+    background: $green;
+    color: white;
+    font-family: $Arch;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $red;
+    transition: 1s;
+}
+
+//////
+///Remodal settings
+.remodal-close {
+    //    left: no;
+    right: 1px;
+}
+
+#remodal-form {
+    max-height: 550px;
+    max-width: 400px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.48);
+}
+
+.remodal-bg {
+    //    filter: blur(20px);  
+}
+
+.remodal-overlay {
+    background-color: rgba(222, 222, 222, 0.76);
+}
+
+.remodal {
+    padding-bottom: 5px;
+    h2 {
+        margin: 5px;
+    }
+}
+
+//////
+///Form 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        @extend p;
+        width: 99%;
+        margin: 10px 0;
+        border: 0;
+        border: 1.2px solid rgba(0, 0, 0, 0.2);
+        padding: 5px;
+    }
+    textarea {
+        @extend input,
+        p;
+        resize: none;
+    }
+    button {
+        @extend .btn;
+    }
+}

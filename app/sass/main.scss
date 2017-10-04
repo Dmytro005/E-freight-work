@@ -1,0 +1,498 @@
+@import "fonts";
+@import "settings";
+@import "menu";
+$degT: 15%;
+$degB: 85%;
+$poly-top: polygon(0% $degT, 100% 0%, 100% 100%, 0% 100%);
+$poly-bott: polygon(0% 0%, 100% 0%, 100% $degB, 0% 100%);
+$poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
+//Progress bar thin
+$bar: 2px;
+///General settings for Desctop
+body {
+    //    background-color: white;
+    font-family: 'ComfortaaRegular', cursive;
+    font-size: 52px;
+    margin: 0;
+    transition: 1s;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.wr {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+    background-color: $grey;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.row::after {
+    display: none;
+}
+
+.row::before {
+    display: none;
+}
+
+.rowtext {
+    margin: 30px 5px;
+}
+
+img {
+    width: inherit;
+}
+
+///Sections styles
+section#main {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+    overflow: hidden;
+    clip-path: $poly-bott;
+    #back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -2;
+        background-color: black;
+    }
+    video {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        opacity: 0.5;
+    }
+    .wr {
+        height: 100%;
+        margin: 0;
+        .box {
+            background: none;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            &:after {
+                content: none;
+                display: none;
+            }
+            &:before {
+                content: none;
+                display: none;
+            }
+            #logo {
+                display: flex;
+                height: 100px;
+                width: auto;
+            }
+            .menu {
+                align-self: flex-start;
+                ul {
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    li {
+                        visibility: hidden;
+                        a {
+                            color: white;
+                            transition: 1s;
+                            &::after {
+                                height: 2px;
+                                display: block;
+                                width: 0%;
+                                margin: auto;
+                            }
+                            &:hover {
+                                &::after {
+                                    content: "";
+                                    // margin-top: 5px;
+                                    background-color: $green;
+                                    transition: 1s;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin-bottom: auto;
+            width: auto;
+            margin-top: auto;
+            margin-bottom: 10%;
+            align-self: flex-start;
+            padding: 10px;
+            h2 {
+                color: $green;
+                margin: 0;
+                margin-top: 1em;
+                text-align: left;
+                font-size: 25px;
+            }
+            h2 {
+                span {
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.fade {
+    position: absolute;
+}
+
+section#about {
+    margin-top: 2%;
+    padding: 0;
+    background: none;
+    background-color: white;
+    justify-content: space-around;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    transition: ease 4s;
+    .wr {
+        margin: 0;
+        #arrow {
+            width: 14px;
+            margin-top: -7%;
+            animation: scale 2s ease infinite;
+            cursor: pointer;
+        }
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                fill: $darker;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .rowtext {
+            margin-top: 70px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            #we {
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    font-family: $ComB;
+                    margin: 5px;
+                    margin-top: 20px;
+                }
+            }
+            margin-bottom: 0;
+        }
+    }
+    #team {
+        transition: 0, 5s;
+        display: none;
+        margin-top: 0;
+        transition: ease;
+        .row {
+            flex-direction: column;
+            align-items: center;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: center;
+                margin: 0;
+                li {
+                    max-width: 200px;
+                    h4 {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 500ms;
+    cursor: pointer;
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+section#problems {
+    clip-path: $poly;
+    .wr {
+        h2 {
+            margin-top: 10%;
+            align-self: flex-start;
+            color: black;
+            padding-bottom: 50px;
+        }
+        h4 {
+            color: $red;
+            margin: 0;
+        }
+    }
+    padding-bottom: 52;
+    padding-top: 2%;
+    .desc {
+        margin-bottom: 20px;
+    }
+    .carousel {
+        .flickity-viewport {
+            height: auto;
+        }
+        width: 100%;
+        .carousel-cell {
+            width: 100%;
+            .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0;
+                padding-bottom: 10px;
+                img {
+                    padding: 20px;
+                    max-width: 550px;
+                    max-height: 300px;
+                }
+                div {
+                    text-align: left;
+                    h3 {
+                        margin-top: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    //ProgressBar and buttons
+    .row {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 10%;
+        justify-content: space-between;
+        #cover {
+            background-color: rgb(164, 164, 164);
+            width: 90%;
+            height: $bar;
+            .progress-bar {
+                width: 0;
+                align-self: flex-start;
+                background-color: #373737;
+                height: $bar;
+            }
+        }
+        .box {
+            display: flex;
+            width: 50px;
+            justify-content: space-between;
+            background: none;
+            margin: 10px;
+            margin-right: 0px;
+            .button-previous {
+                cursor: pointer;
+                width: 14px;
+                height: 14px;
+                background: url(../img/svg/arrow-previous.svg);
+                background-position: cover;
+            }
+            .button-next {
+                cursor: pointer;
+                width: 14px;
+                height: 14px;
+                background: url(../img/svg/arrow-next.svg);
+            }
+        }
+    }
+}
+
+section#solutions {
+    background: none;
+    .wr {
+        .row1 {
+            margin: 0;
+            padding-bottom: 50px;
+            h2 {
+                align-self: flex-start;
+                color: black;
+            }
+        }
+        .row2 {
+            justify-content: space-between;
+            align-items: center;
+            .track {
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .text {
+                    ul {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            color: black;
+                            cursor: pointer;
+                            font-size: 12px;
+                            padding: 4px 0;
+                            opacity: 0.5;
+                            &:active {
+                                color: $darker;
+                            }
+                        }
+                    }
+                }
+            }
+            .progressBar2 {
+                #cover2 {
+                    height: 300px;
+                    width: $bar;
+                    background-color: $darker;
+                }
+                .progress-bar {
+                    width: $bar;
+                    background-color: black;
+                }
+            }
+            #area {
+                display: block;
+                width: 85%;
+                overflow: hidden;
+                height: 320px;
+                .box {
+                    width: 100%;
+                    padding-right: 0px;
+                    .row {
+                        margin: 0;
+                        padding: 10px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        text-align: left;
+                        height: inherit;
+                        img {
+                            padding: 20px;
+                            max-width: 450px;
+                        }
+                    }
+                }
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+section#contacts {
+    #map {
+        width: 100%;
+        height: 450px;
+    }
+    clip-path: $poly-top;
+    padding: 0;
+    .wr {
+        .btn {
+            margin: 10px;
+            margin-top: 20px;
+        }
+        .row {
+            margin: 0;
+            padding: 20px;
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 10px;
+                margin-top: 0;
+                li {
+                    margin: 0;
+                    padding: 20px;
+                    min-width: 100px;
+                    img {
+                        height: 28px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $darker;
+                        text-align: left;
+                        &:first-child {
+                            color: black;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            padding: 10px;
+        }
+    }
+}
+
+///Modal Form
+.remodal-overlay {
+    z-index: 6;
+}
+
+.remodal-wrapper {
+    z-index: 7;
+}
+
+@import "media";
