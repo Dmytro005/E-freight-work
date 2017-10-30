@@ -16,7 +16,6 @@ $darker: #BFBFBF;
 $desctop: 1024px;
 $mobile: 700px;
 ///Main Styles
-
 h2 {
     font-family: $ComB;
     color: $red;
@@ -29,7 +28,7 @@ h2 {
 
 h3 {
     @extend h2;
-    color: black;
+    color: $green;
     font-size: 18px;
     margin: 0px;
     padding: 0;
@@ -48,14 +47,12 @@ p {
     font-family: $ComR;
     font-size: 15px;
     color: black;
-    margin: 5px 0;
-    //    line-height: 1.5;
+    margin: 5px 0; //    line-height: 1.5;
 }
 
 a {
     @extend p;
-    text-decoration: none;
-    //    color: white;
+    text-decoration: none; //    color: white;
 }
 
 a:hover {
@@ -81,7 +78,7 @@ ul {
     }
 }
 
-.drop-down {
+/*.drop-down {
     transition: 1s;
     width: 45px;
     height: 45px;
@@ -108,7 +105,7 @@ ul {
         transform: translate(-3px, -5px) rotate(0);
         height: 14px;
     }
-}
+}*/
 
 .close {
     transition: 1s;
@@ -145,7 +142,7 @@ ul {
 
 //////
 ///Remodal settings
-.remodal-close {
+/*.remodal-close {
     //    left: no;
     right: 1px;
 }
@@ -170,28 +167,51 @@ ul {
     h2 {
         margin: 5px;
     }
+}*/
+
+/*Hint */
+
+.tooltip {
+    @extend p;
+    position: relative;
+    margin: 0 !important;
+    font-size: initial !important;
+    width: fit-content;
+    color: $green;
+    transition: all 1s;
 }
 
-//////
-///Form 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    input {
-        @extend p;
-        width: 99%;
-        margin: 10px 0;
-        border: 0;
-        border: 1.2px solid rgba(0, 0, 0, 0.2);
-        padding: 5px;
-    }
-    textarea {
-        @extend input,
-        p;
-        resize: none;
-    }
-    button {
-        @extend .btn;
+.tooltip .tooltiptext {
+    @extend p;
+    padding: 10px;
+    visibility: hidden;
+    max-width: 250px;
+    background-color: $red;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+    opacity: 0;
+    transition: all 1s;
+    box-shadow: 2px 1px 11px 1px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: $red transparent transparent transparent;
+}
+
+.tooltip:hover {
+    color: $red;
+    .tooltiptext {
+        visibility: visible;
+        opacity: 1;
     }
 }

@@ -1,9 +1,4 @@
 ///Mobile
-$degT: 8%;
-$degB: 92%;
-$poly-top: polygon(0% $degT, 100% 0%, 100% 100%, 0% 100%);
-$poly-bott: polygon(0% 0%, 100% 0%, 100% $degB, 0% 100%);
-$poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
 @media only screen and (max-width: 800px) {
     .menu {
         display: none;
@@ -33,7 +28,6 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
         max-width: 450px;
     }
     section#main {
-        clip-path: $poly-bott;
         .wr {
             .box {
                 align-items: center;
@@ -55,8 +49,7 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
             }
         }
     }
-    section#problems {
-        clip-path: $poly;
+    section#prob-sols {
         .wr {
             padding: 8% 0px;
             h2 {
@@ -75,6 +68,9 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
                         img {
                             width: 90%;
                         }
+                        .column{
+                            margin: auto;
+                        }
                         h3 {
                             text-align: center;
                             padding: 10px;
@@ -87,47 +83,7 @@ $poly: polygon(0% $degT, 100% 0%, 100% $degB, 0% 100%);
             }
         }
     }
-    section#solutions {
-        padding-bottom: 0;
-        .wr {
-            .row1 {
-                padding-bottom: 1px;
-                h2 {
-                    align-self: center;
-                    padding-bottom: 20px;
-                    margin: 0;
-                }
-            }
-            .row2 {
-                .track {
-                    display: none;
-                }
-                #area {
-                    height: auto;
-                    width: 100%;
-                    #child {
-                        overflow: none;
-                        height: auto;
-                        .row {
-                            padding: 0;
-                            margin-bottom: 30px;
-                            margin-top: 30px;
-                            height: inherit;
-                            img {
-                                width: inherit;
-                            }
-                            h3 {
-                                text-align: center;
-                                padding: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     section#contacts {
-        clip-path: $poly-top;
         #map {
             height: 260px;
         }

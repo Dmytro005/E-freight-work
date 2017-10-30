@@ -17,15 +17,7 @@ if ($("body").width() >= 800) {
         offset: 200
     }
     $("a").mPageScroll2id();
-
-    //Add animation to .menu>ul>li
-    setTimeout(function () {
-        $(".menu>ul>li").each(function (i) {
-            $(".menu>ul>li").eq(i).addClass("wow rotateInUpLeft");
-            $(".menu>ul>li").eq(i).attr("data-wow-delay", i * 0.2 + "s");
-        });
-    }, 50);
-}
+} 
 
 
 //------Only mobile settings --------/
@@ -82,55 +74,6 @@ carousel.on('scroll', function (progress) {
     $("#current").text(carousel.selectedIndex + 1 + " /");
 });
 
-
-
-
-//-------Vertical Carousel element START----///
-
-var progressBar2 = $("#progressBar2");
-
-$("#area").on("scroll", function () {
-    var scroll2 = $(this).scrollTop();
-
-    var maxScr = ($(this).prop("scrollHeight") - $(this).height());
-    var maxBar = $("#cover2").height();
-
-    // console.log(maxBar);
-    var progress2 = (scroll2 * maxBar) / maxScr;
-
-    $("#progressBar2").css({
-        "height": progress2 + "px"
-    });
-});
-
-////Vertical scroll on click
-
-var previous = $("li[order='1']");
-previous.css({"opacity":"1",
-                  "text-decoration":"underline"
-                 });
-
-$("li[order]").on("click", function () {
-    previous.css({"opacity":"0.5",
-                  "text-decoration":"none"
-                 });
-    previous = $(this);
-    $(this).css({"opacity":"1",
-                  "text-decoration":"underline"
-                 });
-});
-
-$(".solutions").on("click", function () {
-
-    var order = $(this).attr("order");
-    var sol = "#solution" + order;
-
-    var scroll = $(sol).offset().top - $("#child").offset().top;
-
-    $('#area').animate({
-        scrollTop: scroll
-    }, 500);
-});
 
 //Add scroll Top to #arrow
 $("#arrow").on("click", function () {
