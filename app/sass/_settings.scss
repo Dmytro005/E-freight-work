@@ -177,7 +177,6 @@ ul {
     margin: 0 !important;
     font-size: initial !important;
     width: fit-content;
-    text-decoration: underline;
     transition: all 1s;
 }
 
@@ -209,7 +208,7 @@ ul {
 }
 
 .tooltip:hover {
-    color: $blue;
+    color: $green;
     .tooltiptext {
         visibility: visible;
         opacity: 1;
