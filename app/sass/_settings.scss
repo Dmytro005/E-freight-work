@@ -5,7 +5,7 @@ $ComR: SourceSansPro-Light;
 $Arch: SourceSansPro-Regular;
 //Colors
 $green:#52BE7F;
-$red: #16325C;
+$blue: #16325C;
 $grey: #FAFBFD; //section grey
 $darker: #BFBFBF;
 
@@ -18,7 +18,7 @@ $mobile: 700px;
 ///Main Styles
 h2 {
     font-family: $ComB;
-    color: $red;
+    color: $blue;
     font-size: 25px;
     text-transform: uppercase;
     margin: 5px;
@@ -38,7 +38,7 @@ h3 {
 h4 {
     font-family: $ComR;
     font-size: 16px;
-    color: $red;
+    color: $blue;
     margin: 0;
     text-transform: none;
 }
@@ -136,7 +136,7 @@ ul {
 }
 
 .btn:hover {
-    background-color: $red;
+    background-color: $blue;
     transition: 1s;
 }
 
@@ -177,7 +177,7 @@ ul {
     margin: 0 !important;
     font-size: initial !important;
     width: fit-content;
-    color: $green;
+    text-decoration: underline;
     transition: all 1s;
 }
 
@@ -186,7 +186,7 @@ ul {
     padding: 10px;
     visibility: hidden;
     max-width: 250px;
-    background-color: $red;
+    background-color: $blue;
     color: #fff;
     position: absolute;
     z-index: 1;
@@ -205,11 +205,11 @@ ul {
     margin-left: -7px;
     border-width: 7px;
     border-style: solid;
-    border-color: $red transparent transparent transparent;
+    border-color: $blue transparent transparent transparent;
 }
 
 .tooltip:hover {
-    color: $red;
+    color: $blue;
     .tooltiptext {
         visibility: visible;
         opacity: 1;
