@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20314 -10179 299 207">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafbfd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #16325c;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 8px;
+      }
+
+      .cls-2, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #52be7f;
+      }
+
+      .cls-4 {
+        fill: #16325c;
+        font-size: 12px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #061c3f;
+        font-size: 30px;
+        font-family: Ubuntu-Regular, Ubuntu;
+        letter-spacing: 0.007em;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_548" data-name="Group 548" transform="translate(-19 339)">
+    <g id="Rectangle_558" data-name="Rectangle 558" class="cls-1" transform="translate(-20295 -10475)">
+      <rect class="cls-6" width="299" height="157" rx="6"/>
+      <rect class="cls-7" x="4" y="4" width="291" height="149" rx="2"/>
+    </g>
+    <g id="Rectangle_561" data-name="Rectangle 561" class="cls-2" transform="translate(-20191 -10311) rotate(-90)">
+      <rect class="cls-6" width="58" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="54" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_562" data-name="Rectangle 562" class="cls-2" transform="translate(-20274 -10311) rotate(-90)">
+      <rect class="cls-6" width="58" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="54" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_559" data-name="Rectangle 559" class="cls-2" transform="translate(-20108 -10311) rotate(-90)">
+      <rect class="cls-6" width="58" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="54" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_553" data-name="Rectangle 553" class="cls-2" transform="translate(-20025 -10311) rotate(-90)">
+      <rect class="cls-6" width="58" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="54" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_563" data-name="Rectangle 563" class="cls-2" transform="translate(-20295 -10356)">
+      <rect class="cls-6" width="299" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="295" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_475" data-name="Rectangle 475" class="cls-3" transform="translate(-20257 -10432)">
+      <rect class="cls-6" width="57" height="84" rx="6"/>
+      <rect class="cls-7" x="4" y="4" width="49" height="76" rx="2"/>
+    </g>
+    <g id="Rectangle_478" data-name="Rectangle 478" class="cls-2" transform="translate(-20246 -10418)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_479" data-name="Rectangle 479" class="cls-2" transform="translate(-20246 -10402)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_480" data-name="Rectangle 480" class="cls-2" transform="translate(-20246 -10386)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_481" data-name="Rectangle 481" class="cls-2" transform="translate(-20246 -10370)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_475-2" data-name="Rectangle 475" class="cls-3" transform="translate(-20174 -10432)">
+      <rect class="cls-6" width="57" height="84" rx="6"/>
+      <rect class="cls-7" x="4" y="4" width="49" height="76" rx="2"/>
+    </g>
+    <g id="Rectangle_478-2" data-name="Rectangle 478" class="cls-2" transform="translate(-20163 -10418)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_479-2" data-name="Rectangle 479" class="cls-2" transform="translate(-20163 -10402)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_480-2" data-name="Rectangle 480" class="cls-2" transform="translate(-20163 -10386)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_481-2" data-name="Rectangle 481" class="cls-2" transform="translate(-20163 -10370)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_475-3" data-name="Rectangle 475" class="cls-3" transform="translate(-20091 -10432)">
+      <rect class="cls-6" width="57" height="84" rx="6"/>
+      <rect class="cls-7" x="4" y="4" width="49" height="76" rx="2"/>
+    </g>
+    <g id="Rectangle_478-3" data-name="Rectangle 478" class="cls-2" transform="translate(-20080 -10418)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_479-3" data-name="Rectangle 479" class="cls-2" transform="translate(-20080 -10402)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_480-3" data-name="Rectangle 480" class="cls-2" transform="translate(-20080 -10386)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <g id="Rectangle_481-3" data-name="Rectangle 481" class="cls-2" transform="translate(-20080 -10370)">
+      <rect class="cls-6" width="36" height="8" rx="4"/>
+      <rect class="cls-7" x="2" y="2" width="32" height="4" rx="2"/>
+    </g>
+    <text id="_12" data-name="12" class="cls-4" transform="translate(-20076.449 -10449.156)"><tspan x="6.324" y="13">12</tspan></text>
+    <text id="_11" data-name="11" class="cls-4" transform="translate(-20158.449 -10449.156)"><tspan x="6.324" y="13">11</tspan></text>
+    <text id="_10" data-name="10" class="cls-4" transform="translate(-20243.449 -10449.156)"><tspan x="6.324" y="13">10</tspan></text>
+    <text id="Magazyn" class="cls-5" transform="translate(-20295 -10518)"><tspan x="0" y="28">Magazyn</tspan></text>
+  </g>
+</svg>

@@ -251,36 +251,39 @@ section#about {
     }
 }
 
-/*.team {
-    width: 100px;
-    height: 100px;
-    margin: 8px;
-    margin-bottom: 5px;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    transition: 500ms;
-    cursor: pointer;
-    &:hover {
-        filter: grayscale(0%);
-        transform: scale3d(1.1, 1.1, 1);
+section#message {
+    margin: 20px 0;
+    background-color: $grey;
+    .wr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                color: $green;
+            }
+        }
     }
-}*/
+}
 
 section#prob-sols {
     background-color: white;
     .wr {
         h2 {
-            margin-top: 10%;
+            //            margin-top: 50px;
             align-self: centers;
-        }
-        .desc {
-            margin-bottom: 40px;
         }
     }
     padding-bottom: 52;
     padding-top: 2%;
     .desc {
-        margin-bottom: 20px;
+        //        margin-bottom: 20px;
     }
     .carousel {
         .flickity-viewport {
@@ -326,14 +329,14 @@ section#prob-sols {
                             display: flex;
                             flex-direction: column;
                             margin: 0;
-                            li{
-                            color: $blue;
-                            font-size: 20px;
-                            text-transform: none;
+                            li {
+                                color: $blue;
+                                font-size: 20px;
+                                text-transform: none;
                                 width: 100%;
                                 line-height: 20px;
-                                p{
-                                    margin: 5;
+                                p {
+                                    margin: 1px 0px;
                                 }
                             }
                         }
@@ -478,7 +481,7 @@ section#contacts {
             @extend .btn;
             margin-top: 20px;
         }
-        h2{
+        h2 {
             margin-top: 30px;
         }
         .row {

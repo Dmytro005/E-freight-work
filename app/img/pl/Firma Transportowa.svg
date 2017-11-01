@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-21645 -10182 376 210">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #061c3f;
+        font-size: 30px;
+        font-family: Ubuntu-Regular, Ubuntu;
+        letter-spacing: 0.007em;
+      }
+
+      .cls-2, .cls-5, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        stroke: #16325c;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 8px;
+      }
+
+      .cls-3 {
+        fill: #fafbfd;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #52be7f;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-width: 4px;
+      }
+
+      .cls-7 {
+        fill: #dcf2e5;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_545" data-name="Group 545" transform="translate(-407 339)">
+    <text id="Firma_Transportowa" data-name="Firma Transportowa" class="cls-1" transform="translate(-21176 -10521)"><tspan x="0" y="28">Firma </tspan><tspan x="0" y="63">Transportowa</tspan></text>
+    <g id="Group_537" data-name="Group 537" transform="translate(-6534 -8458)">
+      <g id="Rectangle_340" data-name="Rectangle 340" class="cls-2" transform="translate(-14649 -1886)">
+        <rect class="cls-8" width="240" height="8" rx="4"/>
+        <rect class="cls-9" x="4" y="4" width="232"/>
+      </g>
+      <path id="Path_356" data-name="Path 356" class="cls-3" d="M8,4H208a4,4,0,0,1,4,4v99a4,4,0,0,1-4,4H8a4,4,0,0,1-4-4V8A4,4,0,0,1,8,4Z" transform="translate(-14643 -1987)"/>
+      <path id="Path_333" data-name="Path 333" class="cls-3" d="M5,5.1C6.123,4.043,8.49,4,8.49,4H45.6l38,41.4v61.873s0,2.095-1,3.026a4.415,4.415,0,0,1-3,.7H7.869s-2.1.132-3.069-.8-.8-2.927-.8-2.927V8.228A4.523,4.523,0,0,1,5,5.1Z" transform="translate(-14420 -1987)"/>
+      <path id="Path_334" data-name="Path 334" class="cls-4" d="M-1.681,4.473A2.693,2.693,0,0,1-.179,4H24.209L40.553,21.807V36.932a2.1,2.1,0,0,1-.43,1.3,1.9,1.9,0,0,1-1.29.3H-.447a2.086,2.086,0,0,1-1.32-.344,1.829,1.829,0,0,1-.344-1.259V5.819A1.946,1.946,0,0,1-1.681,4.473Z" transform="translate(-14399.053 -1965.833)"/>
+      <g id="Rectangle_342" data-name="Rectangle 342" class="cls-2" transform="translate(-14397 -1915)">
+        <rect class="cls-8" width="35" height="8" rx="4"/>
+        <rect class="cls-9" x="4" y="4" width="27"/>
+      </g>
+      <g id="Rectangle_343" data-name="Rectangle 343" class="cls-5" transform="translate(-14704 -1952)">
+        <rect class="cls-8" width="55" height="8" rx="4"/>
+        <rect class="cls-9" x="2" y="2" width="51" height="4" rx="2"/>
+      </g>
+      <g id="Rectangle_344" data-name="Rectangle 344" class="cls-5" transform="translate(-14689.7 -1939)">
+        <rect class="cls-8" width="40.7" height="8" rx="4"/>
+        <rect class="cls-9" x="2" y="2" width="36.7" height="4" rx="2"/>
+      </g>
+      <g id="Rectangle_345" data-name="Rectangle 345" class="cls-5" transform="translate(-14676.7 -1926)">
+        <rect class="cls-8" width="27.7" height="8" rx="4"/>
+        <rect class="cls-9" x="2" y="2" width="23.7" height="4" rx="2"/>
+      </g>
+      <g id="Rectangle_346" data-name="Rectangle 346" class="cls-2" transform="translate(-14340 -1886)">
+        <rect class="cls-8" width="12" height="8" rx="4"/>
+        <rect class="cls-9" x="4" y="4" width="4"/>
+      </g>
+      <g id="Rectangle_347" data-name="Rectangle 347" class="cls-5" transform="translate(-14413 -1981) rotate(-90)">
+        <rect class="cls-8" width="12" height="8" rx="4"/>
+        <rect class="cls-9" x="2" y="2" width="8" height="4" rx="2"/>
+      </g>
+      <rect id="Rectangle_348" data-name="Rectangle 348" class="cls-6" width="115" height="99" transform="translate(-14550 -1979)"/>
+      <g id="Group_275" data-name="Group 275" transform="translate(-14868 -3243)">
+        <g id="Ellipse_168" data-name="Ellipse 168" class="cls-3" transform="translate(469 1344)">
+          <circle class="cls-8" cx="23" cy="23" r="23"/>
+          <circle class="cls-9" cx="23" cy="23" r="19"/>
+        </g>
+        <g id="Ellipse_171" data-name="Ellipse 171" class="cls-7" transform="translate(487 1362)">
+          <circle class="cls-8" cx="5" cy="5" r="5"/>
+          <circle class="cls-9" cx="5" cy="5" r="3"/>
+        </g>
+      </g>
+      <g id="Group_276" data-name="Group 276" transform="translate(-14955 -3243)">
+        <g id="Ellipse_168-2" data-name="Ellipse 168" class="cls-3" transform="translate(469 1344)">
+          <circle class="cls-8" cx="23" cy="23" r="23"/>
+          <circle class="cls-9" cx="23" cy="23" r="19"/>
+        </g>
+        <g id="Ellipse_171-2" data-name="Ellipse 171" class="cls-7" transform="translate(487 1362)">
+          <circle class="cls-8" cx="5" cy="5" r="5"/>
+          <circle class="cls-9" cx="5" cy="5" r="3"/>
+        </g>
+      </g>
+      <g id="Group_277" data-name="Group 277" transform="translate(-15098 -3243)">
+        <g id="Ellipse_168-3" data-name="Ellipse 168" class="cls-3" transform="translate(469 1344)">
+          <circle class="cls-8" cx="23" cy="23" r="23"/>
+          <circle class="cls-9" cx="23" cy="23" r="19"/>
+        </g>
+        <g id="Ellipse_171-3" data-name="Ellipse 171" class="cls-7" transform="translate(487 1362)">
+          <circle class="cls-8" cx="5" cy="5" r="5"/>
+          <circle class="cls-9" cx="5" cy="5" r="3"/>
+        </g>
+      </g>
+      <g id="Group_278" data-name="Group 278" transform="translate(-15047 -3243)">
+        <g id="Ellipse_168-4" data-name="Ellipse 168" class="cls-3" transform="translate(469 1344)">
+          <circle class="cls-8" cx="23" cy="23" r="23"/>
+          <circle class="cls-9" cx="23" cy="23" r="19"/>
+        </g>
+        <g id="Ellipse_171-4" data-name="Ellipse 171" class="cls-7" transform="translate(487 1362)">
+          <circle class="cls-8" cx="5" cy="5" r="5"/>
+          <circle class="cls-9" cx="5" cy="5" r="3"/>
+        </g>
+      </g>
+      <g id="Rectangle_349" data-name="Rectangle 349" class="cls-2" transform="translate(-14618 -1915)">
+        <rect class="cls-8" width="162" height="8" rx="4"/>
+        <rect class="cls-9" x="4" y="4" width="154"/>
+      </g>
+      <g id="Rectangle_350" data-name="Rectangle 350" class="cls-2" transform="translate(-14443 -1900)">
+        <rect class="cls-8" width="30" height="8" rx="4"/>
+        <rect class="cls-9" x="4" y="4" width="22"/>
+      </g>
+    </g>
+  </g>
+</svg>
