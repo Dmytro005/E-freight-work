@@ -29,15 +29,18 @@
     }
     section#main {
         .wr {
-            .box {
-                align-items: center;
-                justify-content: center;
-            }
-            #logo{
-                margin: 0;
+            .menu {
+                margin: auto;
+                ul {
+                    display: none;
+                }
+                #logo {
+                    margin: auto;
+                }
             }
             .row {
                 margin-top: 0;
+                margin-bottom: auto;
                 h2 {
                     text-align: center;
                     align-self: center;
@@ -50,7 +53,6 @@
     }
     section#prob-sols {
         .wr {
-            padding: 8% 0px;
             h2 {
                 align-self: center;
                 padding-bottom: 20px;
@@ -61,20 +63,20 @@
                 .carousel-cell {
                     .row {
                         justify-content: space-around;
-//                        align-items: center;
+                        //                        align-items: center;
                         padding: 20px;
                         padding-bottom: 0;
                         img {
                             width: 90%;
                         }
-                        .column{
+                        .column {
                             margin: auto;
                         }
                         h3 {
                             text-align: center;
                             padding: 10px;
                         }
-                        p{
+                        p {
                             text-align: left;
                         }
                     }

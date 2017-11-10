@@ -30,8 +30,6 @@ if ($("body").width() >= 800) {
 //------Carousel in section Problems setting Start-------//
 
 //Carousel progressbar
-
-
 var carousel = new Flickity('.carousel');
 var progressBar = document.querySelector('.progress-bar');
 
