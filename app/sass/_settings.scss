@@ -1,8 +1,9 @@
 ///Variables
 //Fonts
-$ComB: Ubuntu-Light;
-$ComR: SourceSansPro-Light;
-$Arch: SourceSansPro-Regular;
+$Ubuntu-L: Ubuntu-Light;
+
+$SSP-L: SourceSansPro-Light;
+$SSP-R: SourceSansPro-Regular;
 //Colors
 $green:#52BE7F;
 $blue: #16325C;
@@ -18,7 +19,7 @@ $desctop: 1024px;
 $mobile: 700px;
 ///Main Styles
 h2 {
-    font-family: $ComB;
+    font-family: $Ubuntu-L;
     color: $green;
     font-size: 25px;
     text-transform: uppercase;
@@ -37,7 +38,7 @@ h3 {
 }
 
 h4 {
-    font-family: $ComR;
+    font-family: $SSP-R;
     font-size: 16px;
     color: $blue;
     margin: 0;
@@ -45,7 +46,7 @@ h4 {
 }
 
 p {
-    font-family: $ComR;
+    font-family: $SSP-R;
     font-size: 16px;
     color: black;
     margin: 5px 0; //    line-height: 1.5;
@@ -127,7 +128,7 @@ ul {
 .btn {
     background: $red;
     color: white;
-    font-family: $Arch;
+    font-family: $SSP-R;
     padding: 10px 20px;
     text-transform: uppercase;
     border-radius: 2px;
