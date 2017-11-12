@@ -207,7 +207,6 @@ section#message {
 
 section#prob-sols {
     background-color: white;
-    margin: 30px auto;
     .wr {
         max-width: 1000px;
         h2 {
@@ -215,6 +214,8 @@ section#prob-sols {
             align-self: centers;
         }
     }
+    padding-bottom: 52;
+    padding-top: 2%;
     .desc {
         //        margin-bottom: 20px;
     }
@@ -233,20 +234,24 @@ section#prob-sols {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 20px;
+                margin: 0;
                 padding-bottom: 10px;
+<<<<<<< HEAD
                 flex-direction: row-reverse;
 
+=======
+>>>>>>> parent of ec17d01... Change photo font and styling
                 img {
-                    max-width: 300px;
+                    //                     padding-right: 40px;
+                    max-width: 500px;
+                    max-height: 250px;
                     margin: auto;
                 }
                 .column {
                     display: flex;
                     flex-direction: column;
-                    max-width: 550px;
+                    max-width: 350px;
                     margin: auto;
-                    margin-right: 10px;
                     padding: 10px;
                     div {
                         margin-top: 30px;
@@ -275,9 +280,12 @@ section#prob-sols {
                             }
                         }
                     }
+<<<<<<< HEAD
 
                     div:nth-child(2n) {}
 
+=======
+>>>>>>> parent of ec17d01... Change photo font and styling
                 }
             }
         }
@@ -285,9 +293,12 @@ section#prob-sols {
     .row {
         display: flex;
         align-items: center;
+<<<<<<< HEAD
         //        margin-top: 0;
+=======
+        margin-top: 0;
+>>>>>>> parent of ec17d01... Change photo font and styling
         justify-content: space-between;
-        margin: 0;
         #cover {
             background-color: rgb(164, 164, 164);
             width: 90%;
@@ -302,16 +313,22 @@ section#prob-sols {
             }
         }
         .box {
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ec17d01... Change photo font and styling
             display: flex;
             width: 50px;
             justify-content: space-between;
             background: none;
             margin: 10px;
             margin-right: 0px;
+<<<<<<< HEAD
             p {
                 font-family: $SSP-R;
             }
+=======
+>>>>>>> parent of ec17d01... Change photo font and styling
             .button-previous {
                 cursor: pointer;
                 width: 18px;
@@ -325,18 +342,104 @@ section#prob-sols {
                 height: 18px;
                 background: url(../img/svg/arrow-next.svg);
             }
+<<<<<<< HEAD
 
             &:nth-child(n) {
                 margin-top: 0;
             }
         }
 
+=======
+        }
+>>>>>>> parent of ec17d01... Change photo font and styling
     }
 
 }
 
+section#solutions {
+    background: none;
+    .wr {
+        .row1 {
+            margin: 0;
+            padding-bottom: 50px;
+            h2 {
+                align-self: flex-start; //                color: black;
+            }
+        }
+        .row2 {
+            justify-content: space-between;
+            align-items: center;
+            .track {
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .text {
+                    ul {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        text-align: left;
+                        li {
+                            color: black;
+                            cursor: pointer;
+                            font-size: 12px;
+                            padding: 4px 0;
+                            opacity: 0.5;
+                            &:active {
+                                color: $darker;
+                            }
+                        }
+                    }
+                }
+            }
+            .progressBar2 {
+                #cover2 {
+                    height: 300px;
+                    width: $bar;
+                    background-color: $darker;
+                    border-radius: $bar-radius;
+                }
+                .progress-bar {
+                    width: $bar;
+                    background-color: #16325C;
+                    border-radius: $bar-radius;
+                }
+            }
+            #area {
+                display: block;
+                width: 85%;
+                overflow: hidden;
+                height: 320px;
+                .box {
+                    width: 100%;
+                    padding-right: 0px;
+                    .row {
+                        margin: 0;
+                        padding: 10px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        text-align: left;
+                        height: 320px;
+                        img {
+                            padding: 20px;
+                            max-width: 450px;
+                        }
+                    }
+                }
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
 section#contacts {
-    padding: 20px auto;
+    padding: 0;
     .wr {
         a {
             @extend .btn;

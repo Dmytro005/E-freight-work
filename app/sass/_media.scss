@@ -63,7 +63,7 @@
                 .carousel-cell {
                     .row {
                         justify-content: space-around;
-                        flex-direction: column;
+                        //                        align-items: center;
                         padding: 20px;
                         padding-bottom: 0;
                         img {
@@ -88,6 +88,9 @@
         }
     }
     section#contacts {
+        #map {
+            height: 260px;
+        }
         .wr {
             .row {
                 ul {
