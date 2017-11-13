@@ -40,6 +40,7 @@ section {
     background-repeat: no-repeat;
     padding: 20px 0px;
     background-color: $grey;
+    margin-top: 80px;
 }
 
 .row {
@@ -132,7 +133,7 @@ section#main {
             }
         }
         .row {
-            margin-bottom: 12%;
+            margin-bottom: 100px;
 
             span {
                 @extend h2;
@@ -151,7 +152,7 @@ section#main {
 }
 
 section#about {
-    margin-top: 1%;
+    
     margin-bottom: 35px;
     padding: 0;
     background: none;
@@ -161,11 +162,12 @@ section#about {
     justify-content: center;
     align-items: center;
     transition: ease 4s;
+    margin: 80px auto;
     .wr {
         margin: 0;
         #arrow {
             width: 14px;
-            margin-top: -5%;
+            margin-top: -10%;
             animation: scale 2s ease infinite;
             cursor: pointer;
             fill: #16325C;
@@ -183,7 +185,7 @@ section#about {
             }
         }
         .rowtext {
-            margin-top: 30px;
+            margin-top: 70px;
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -197,7 +199,7 @@ section#about {
 }
 
 section#message {
-    margin: 20px 0;
+//    margin: 20px 0;
     background-color: $grey;
     .wr {
         display: flex;
@@ -226,7 +228,7 @@ section#message {
 
 section#prob-sols {
     background-color: white;
-    margin: 30px auto;
+//    margin: 30px auto;
     .wr {
         max-width: 1000px;
         h2 {
@@ -278,18 +280,27 @@ section#prob-sols {
                             //                           display: inline-block;
                         }
                         ul {
-                            list-style: outside;
+                            
+                            &::before{
+                                display: none;
+                            }
+                            
+                            &::after{
+                                display: none;
+                            }
+
                             display: flex;
                             flex-direction: column;
                             margin: 0;
+                            list-style: outside;
                             li {
-                                color: $blue;
-                                font-size: 20px;
+                                color: black;
+//                                font-size: 20px;
                                 text-transform: none;
                                 width: 100%;
-                                line-height: 20px;
+//                                line-height: 20px;
                                 p {
-                                    margin: 1px 0px;
+                                    
                                 }
                             }
                         }
@@ -323,7 +334,6 @@ section#prob-sols {
             }
         }
         .box {
-            
             display: flex;
             width: 50px;
             justify-content: space-between;
@@ -345,10 +355,6 @@ section#prob-sols {
                 width: 18px;
                 height: 18px;
                 background: url(../img/svg/arrow-next.svg);
-            }
-            
-            &:nth-child(n){
-                margin-top: 0;
             }
         }
         
